@@ -1,0 +1,120 @@
+[
+    {
+        "GebäudeID" : 1,
+        "Grundform des Stockwerks" : "Rechteckig, Gänge Rauten - förmig, liegend, zwei innere Raum - Blöcke getrennt durch Gang",
+        "Position der Räume" : "an allen äußeren Wänden, 1 Raum pro innerer Block",
+        "Toiletten" : "1 Herrentoilette, 1 Damentoilette",
+        "Anzahl Gänge" : "7",
+        "12 Uhr-6 Uhr-Gänge" : "senkrecht, Gang 7",
+        "1 Uhr-7 Uhr-Gänge" : "diagonal, Gang 3, Gang 6",
+        "3 Uhr-9 Uhr-Gänge" : "waagrecht, Gang 1, Gang 4",
+        "5 Uhr-11 Uhr-Gänge": "diagonal, Gang 2, Gang 5",
+        "Definition des Bezugspunkts" : "von Aufzug aus, geradeaus ist 12 Uhr",
+        "Lage des Bezugspunkts" : "6 Uhr-Seite, längere Seite, Gang 1, mittig von Gang",
+        "Gänge" : [
+            {        
+                "GangID" : 1,
+                "Auslegung des Gangs" : "waagrecht, 3 Uhr - 9 Uhr - Gang",
+                "Länge des Gangs" : "10 Meter",
+                "Warnung" : "Stufe an Anbindung an Gang 7",
+                "Erreichbare Räume" : "Raum 204 - 205 6 Uhr-Seite, Aufzug 1 6 Uhr-Seite",
+                "Erreichbare Stockwerke Aufzug 1" : "-1 bis 5",
+                "Anbindung an" : "Gang 2 diagonal, Gang 7 senkrecht, Gang 6 diagonal"
+
+            }
+        ]
+
+    },
+    {
+        "GebäudeID" : 2,
+        "Grundform des Stockwerks" : "Rechteckig, Gänge Plus - förmig, 4 Raum - Blöcke in Ecken getrennt durch Gänge",
+        "Position der Räume" : "an allen äußeren Ecken, 1 Raum pro innerer Block in 3 Ecken, 1 Ecke mit zwei Räumen",
+        "Barrierefreiheit" : "1 taktiler Plan in Foyer",
+        "Anzahl Gänge" : "7",
+        "12 Uhr-6 Uhr-Gänge" : "senkrecht, Gang 1",
+        "3 Uhr-9 Uhr-Gänge" : "waagrecht, Gang 2",
+        "Anzahl Foyers" : "1",
+        "Position Foyer" : "Foyer 1: Stockwerk - mittig, quadratisch",
+        "Definition des Bezugspunkts" : "von Aufzug aus, geradeaus ist 12 Uhr",
+        "Lage des Bezugspunkts" : "Stockwerk-mittig, längere Seite, Gang 1, 6 Uhr-Seite, Richtung 9 Uhr von Gang 1",
+        "Gänge" : [
+            {
+
+            }
+
+        ],
+        "Foyers" : [
+            {
+                "FoyerID" : "1",
+                "Auslegung des Foyers" : "quadratisch, Stockwerk-mittig",
+                "Länge des Foyers" : "5 mal 5 Meter",
+                "Barrierefreiheit" : "taktiler Gebäudeplan in 3 Uhr-6 Uhr-Eck",
+                "Gekreuzt von" : "Gang 1 senkrecht, Gang 2 waagrecht"
+            }
+        ]
+
+    },
+    {
+        "GebäudeID" : 3,
+
+        "Grundform des Stockwerks" : "Rechteckig, Gänge U-förmig, links-liegend, 1 innerer Raum-Block",
+        "Position der Räume" : "an allen äußeren Wänden, 8 Räume im inneren Raum-Block",
+        "Barrierefreiheit" : "2 barrierefreie Toiletten",
+        "Toiletten" : "1 Herrentoilette barrierefrei, 1 Damentoilette barrierefrei",
+        "Anzahl Gänge" : "3",
+        "12 Uhr-6 Uhr-Gänge" : "senkrecht, Gang 2",
+        "3 Uhr-9 Uhr-Gänge" : "waagrecht, Gang 1, Gang 3",
+        "Definition des Bezugspunkts" : "von Aufzug aus, geradeaus ist 12 Uhr",
+        "Lage des Bezugspunkts" : "Stockwerk-6 Uhr-Seite, längere Seite von Stockwerk, Gang 1, Richtung 9 Uhr von Gang 1",
+        "Gänge" : [
+            {
+                "GangID" : "1",
+                "Auslegung des Gangs" : "waagrecht, 3 Uhr-9 Uhr-Gang",
+                "Länge des Gangs" : "15 Meter",
+                "Erreichbare Räume" : "Raum 206 bis 208 auf 6 Uhr-Seite, Aufzug 1 auf 6 Uhr-Seite, Raum 209 bis 2012 auf 12-Uhr-Seite",
+                "Erreichbare Stockwerke Aufzug 1" : "-1 bis 4",
+                "Anbindung an" : "Gang 2 senkrecht"
+            },
+            {
+                "GangID" : "2",
+                "Auslegung des Gangs" : "senkrecht, 12 Uhr-6 Uhr-Gang",
+                "Länge des Gangs" : "5 Meter",
+                "Warnung" : "Hindernis vor Damentoilette",
+                "Erreichbare Räume" : "1 Herrentoilette, 1 Damentoilette",
+                "Anbindung an" : "Gang 1 waagrecht beide Richtungen",
+                "Abbiegen in" : "Gang 3 waagrecht"
+            },
+            {
+                "GangID" : "3",
+                "Auslegung des Gangs" : "waagrecht, 3 Uhr-9 Uhr-Gang",
+                "Länge des Gangs" : "10 Meter",
+                "Erreichbare Räume" : "Treppe 1 auf 12 Uhr-Seite, Raum 201 bis 203 auf 12-Uhr-Seite, Raum 213 bis 216 auf 6 Uhr-Seite",
+                "Erreichbare Stockwerke Treppe 1" : "-1 bis 5",
+                "Abbiegen in" : "Gang 2 senkrecht"
+            }
+        ]
+    },
+    {
+        "GebäudeID" : "4",
+        "Grundform des Stockwerks" : "Quadratisch, Gänge in Leiter-Form",
+        "Toiletten" : "1 Herrentoilette barrierefrei, 1 Damentoilette barrierefrei",
+        "Anzahl Gänge" : "6",
+        "12 Uhr–6 Uhr–Gänge" : "senkrecht, Gang 2, Gang 4",
+        "2 Uhr–8 Uhr-Gänge" : "diagonal, Gang 6",
+        "3 Uhr–9 Uhr–Gänge": "waagrecht, Gang 1, Gang 5, Gang 3",
+        "Position der Räume" : "Räume an allen Wänden des Gebäudes, 2 Raum-Blöcke im Inneren, von Gängen umgeben",
+        "Definition Bezugspunkt" : "Von Aufzug, aus Aufzug raus ist 12 Uhr",
+        "Lage Bezugspunkt" : "Innerer Block, ca. Gebäudemitte, mittig im Block",
+        "Gänge" : [
+            {
+                "GangID" : "1",
+                "Auslegung des Ganges" : "3 Uhr–9 Uhr–Gang, Von 3 Uhr-Wand bis 9-Uhr-Wand",
+                "Länge des Gangs" : "15 Meter",
+                "Erreichbare Räume" : "Raum 201 bis 205 auf 12 Uhr-Seite, Raum 214 und Aufzug 1 auf 6 Uhr-Seite",
+                "Erreichbare Stockwerke Aufzug 1" : "-2 bis 4",
+                "Gekreuzt von" : "Gang 2",
+                "Anbindung an" : "Gang 4, Gang 6"
+            }
+        ]
+    }
+]

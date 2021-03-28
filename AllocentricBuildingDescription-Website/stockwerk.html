@@ -68,33 +68,26 @@
                 <div class="col-xs-4 col-sm-4">
                     <form>
                         <label for="exampleInputEmail1" class="form-label">Auswahl des Gebäudes</label>
-                        <select class="form-select" size="3" aria-label="Auswahl Gebäude">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                        <select class="form-select" size="3" aria-label="Auswahl Gebäude" id="select21" onchange="buildingSwitch(this.id, 'select22', 'select23')">
+                            <option selected value="0">Open this select menu</option>
+                            <option value="1">Gebäude 1</option>
+                            <option value="2">Gebäude 2</option>
                         </select>
                     </form>
                 </div>
                 <div class="col-xs-4 col-sm-4">
                     <form>
                         <label for="exampleInputEmail1" class="form-label">Auswahl des Stockwerks</label>
-                        <select class="form-select" size="3" aria-label="Auswahl Stockwerk">
+                        <select class="form-select" size="3" aria-label="Auswahl Stockwerk" id="select22" onchange="floorSwitch('select21',this.id, 'select23')">
                             <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
                         </select>
                     </form>
                 </div>
                 <div class="col-xs-4 col-sm-4">
                     <form>
                         <label for="exampleInputEmail1" class="form-label">Auswahl des Ganges/des Foyers</label>
-                        <select class="form-select" size="3" aria-label="Auswahl Gang/Foyer">
+                        <select class="form-select" size="3" aria-label="Auswahl Gang/Foyer" id="select23">
                             <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
                         </select>
                     </form>
                 </div>
@@ -104,7 +97,7 @@
         <div class="top-buffer2 container-fluid">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 d-flex justify-content-center">
-                    <button type="button" class="btn btn-dark">Beschreibung Starten</button>
+                    <button type="button" class="btn btn-dark" onclick="descriptionStart('textField', 'select21', 'select22', 'select23')">Beschreibung Starten</button>
                 </div>
             </div>
         </div>
@@ -113,8 +106,8 @@
             <div class="row">
                 <div class="col-xs-4 col-sm-4">
                 </div>
-                <div class="col-xs-4 col-sm-4">
-                    <p class="text-md-start">Hier steht die Beschreibung eines Flurs oder eines Foyers....
+                <div class="col-xs-4 col-sm-4" id="textField">
+                    <p class="text-md-start">Hier steht die Beschreibung eines Gebäudes, eines Flurs oder eines Gangs/Foyers.....
                     </p>
                 </div>
                 <div class="col-xs-4 col-sm-4">
