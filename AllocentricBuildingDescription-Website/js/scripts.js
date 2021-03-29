@@ -1,36 +1,53 @@
-var building1 = `Grundform des Gebäudes: Rechteckig
+var building1 = `Grundform des Gebäudes: Rechteckig, liegend
 <br> Haupteingang: Doppeltür, Glas
 <br> Position Haupteingang: Am Fasanengarten 5, längere Seite, mittig
 <br> Warnung: Fahrradständer neben Haupteingang
-<br> Stockwerkanzahl: 10, 
+<br> Anzahl Stockwerke: 10, 
 <br> Etagen: -2 bis 7
-<br> Anzahl der Toiletten: 5 Herren-Toiletten, 5 Damen-Toiletten
+<br> Anzahl Toiletten: 5 Herren-Toiletten, barrierefrei, 5 Damen-Toiletten, barrierefrei
 <br> Barrierefreiheit: 1 taktiler Gebäudeplan in Etage 0, Leitsysteme in Etage 0, Etage 3, Etage 4, Etage 7, 10 barrierefreie Toiletten`;
 
-var building2 = "";
+var building2 = `Grundform des Gebäudes: Rechteckig, liegend
+<br> Haupteingang: Drehtür, Glas
+<br> Position Haupteingang: Am Fasanengarten 10, längere Seite, mittig
+<br> Warnung: Parkplatz vor Haupteingang, Baustelle neben Haupteingang
+<br> Anzahl Stockwerke: 5, 
+<br> Etagen: 0 bis 5
+<br> Anzahl Toiletten: 5 Herren-Toiletten, 5 Damen-Toiletten
+<br> Barrierefreiheit: 1 taktiler Gebäudeplan in Etage 0, 4 barrierefreie Toiletten`;
 
-var building1Floor1 = `Grundform des Stockwerks: Rechteckig, Gänge Plus-förmig, 4 Raum-Blöcke in Ecken getrennt durch Gänge
+var building1Floor1 = `Grundform des Stockwerks: Rechteckig liegend, 4 Raum-Blöcke jeweils in Ecken, getrennt durch Gänge, Gangstruktur: Plus-förmig, mittig, 
 <br> Position der Räume: an allen äußeren Ecken, 1 Raum pro innerer Block in 3 Ecken, 1 Ecke mit zwei Räumen
-<br> Barrierefreiheit: 1 taktiler Plan in Foyer 
-<br> Anzahl Gänge: 7
+<br> Barrierefreiheit: 1 taktiler Gebäudeplan in Foyer 
+<br> Anzahl Gänge: 2
 <br> 12 Uhr-6 Uhr-Gänge: senkrecht, Gang 1
 <br> 3 Uhr-9 Uhr-Gänge: waagrecht, Gang 2 
 <br> Anzahl Foyers: 1 
-<br> Position Foyer: Foyer 1: Stockwerk-mittig, quadratisch 
+<br> Position der Foyers: Foyer 1: Stockwerk-mittig, quadratisch 
 <br> Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr 
-<br> Lage des Bezugspunkts: Stockwerk-mittig, längere Seite, Gang 1, 6 Uhr-Seite, Richtung 9 Uhr von Gang 1`;
+<br> Lage des Bezugspunkts: längere Seite Stockwerk, Seiten-mittig, Gang 1, Richtung längere Seite von Gebäudemitte`;
 
 var building1Floor1Foyer1 = `Auslegung des Foyers: quadratisch, Stockwerk-mittig
-<br> Länge des Foyers: 5x5 Meter 
-<br> Barrierefreiheit: taktiler Gebäudeplan in 3 Uhr-6 Uhr-Eck
+<br> Länge des Foyers: 5 mal 5 Meter 
+<br> Barrierefreiheit: 1 taktiler Gebäudeplan in 6 Uhr-9 Uhr-Ecke
 <br> Gekreuzt von: Gang 1 senkrecht, Gang 2 waagrecht`;
 
-var building1Floor1Hallway1 = ``;
-var building1Floor1Hallway2 = ``;
+var building1Floor1Hallway1 = `Auslegung des Gangs: senkrecht, 12 Uhr-6 Uhr-Gang
+<br> Länge des Gangs: 5 Meter
+<br> Erreichbare Räume: 12 Uhr-Seite, Raum 101, Raum 104, 6 Uhr-Seite, Raum 102, Aufzug 1
+<br> Erreichbare Stockwerke: Aufzug 1 - Stockwerke -2 bis 7
+<br> Anbindung an: Foyer 1
+<br> Gekreuzt von:  Gang 2 waagrecht beide Richtungen`;
 
-var building1Floor2 = `Grundform des Stockwerks: Rechteckig, Gänge U-förmig, links-liegend, 1 innerer Raum-Block
+var building1Floor1Hallway2 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
+<br> Länge des Gangs: 5 Meter
+<br> Erreichbare Räume: 3 Uhr-Seite, Raum 101, Raum 102, 9 Uhr-Seite, Raum 103, Raum 104
+<br> Anbindung an: Foyer 1
+<br> Gekreuzt von:  Gang 1 senkrecht beide Richtungen`;
+
+var building1Floor2 = `Grundform des Stockwerks: Rechteckig, 1 innerer Raum-Block, mittig, Gangstruktur U-förmig, links-liegend, an 3 Seiten um Raumblock
 <br> Position der Räume: an allen äußeren Wänden, 8 Räume im inneren Raum-Block
-<br> Barrierefreiheit: 2 barrierefreie Toiletten
+<br> Barrierefreiheit: 2 barrierefreie Toiletten im Gang
 <br> Toiletten: 1 Herrentoilette barrierefrei, 1 Damentoilette barrierefrei
 <br> Anzahl Gänge: 3
 <br> 12 Uhr-6 Uhr-Gänge: senkrecht, Gang 2
@@ -38,26 +55,26 @@ var building1Floor2 = `Grundform des Stockwerks: Rechteckig, Gänge U-förmig, l
 <br> Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr
 <br> Lage des Bezugspunkts: Stockwerk-6 Uhr-Seite, längere Seite von Stockwerk, Gang 1, Richtung 9 Uhr von Gang 1`;
 
-var building1Floor2Hallway1 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
+var building1Floor2Hallway1 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang, Wand zu Wand
 <br> Länge des Gangs: 15 Meter
-<br> Erreichbare Räume: Raum 206-208 6 Uhr-Seite, Aufzug 1 6 Uhr-Seite, Raum 209-2012 12-Uhr-Seite
-<br> Erreichbare Stockwerke Aufzug 1: -1 bis 4
+<br> Erreichbare Räume: 6 Uhr-Seite, Raum 206 bis 208, Aufzug 1, 12 Uhr-Seite, Raum 209 bis 2012
+<br> Erreichbare Stockwerke Aufzug: Aufzug 1 - Stockwerke -1 bis 4
 <br> Anbindung an: Gang 2 senkrecht`;
 
 var building1Floor2Hallway2 = `Auslegung des Gangs: senkrecht, 12 Uhr-6 Uhr-Gang
 <br> Länge des Gangs: 5 Meter
 <br> Warnung: Hindernis vor Damentoilette
-<br> Erreichbare Räume: 1 Herrentoilette, 1 Damentoilette
-<br> Anbindung an:  Gang 1 waagrecht beide Richtungen
-<br> Abbiegen in: Gang 3 waagrecht`;
+<br> Erreichbare Räume: 3 Uhr-Seite, 1 Herrentoilette, 1 Damentoilette
+<br> Anbindung an: Gang 1 waagrecht beide Richtungen
+<br> Abbiegung in: Gang 3 waagrecht`;
 
 var building1Floor2Hallway3 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
 <br> Länge des Gangs: 10 Meter
-<br> Erreichbare Räume: Treppe 1 12 Uhr-Seite, Raum 201-203 12-Uhr-Seite, Raum 213-216 6 Uhr-Seite
-<br> Erreichbare Stockwerke Treppe 1: -1 bis 5
+<br> Erreichbare Räume: 12 Uhr-Seite Raum 201 bis 203, Treppe 1, 6 Uhr-Seite Raum 213 bis 216
+<br> Erreichbare Stockwerke Treppe: Treppe 1 - Stockwerke -1 bis 5
 <br> Abbiegen in: Gang 2 senkrecht`;
 
-var building2Floor1 = `Grundform des Stockwerks: Rechteckig, Gänge Rauten-förmig, liegend, zwei innere Raum-Blöcke getrennt durch Gang
+var building2Floor1 = `Grundform des Stockwerks: Rechteckig, zwei innere Raum-Blöcke getrennt durch Gang, Gangstruktur: Rauten-förmig, liegend
 <br> Position der Räume: an allen äußeren Wänden, 1 Raum pro innerer Block
 <br> Toiletten: 1 Herrentoilette, 1 Damentoilette
 <br> Anzahl Gänge: 7
@@ -71,40 +88,86 @@ var building2Floor1 = `Grundform des Stockwerks: Rechteckig, Gänge Rauten-förm
 var building2Floor1Hallway1 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
 <br> Länge des Gangs: 10 Meter
 <br> Warnung: Stufe an Anbindung an Gang 7
-<br> Erreichbare Räume: Raum 204-205 6 Uhr-Seite, Aufzug 1 6 Uhr-Seite
-<br> Erreichbare Stockwerke Aufzug 1: -1 bis 5
-<br> Anbindung an: Gang 2 diagonal, Gang 7 senkrecht, Gang 6 diagonal`;
+<br> Erreichbare Räume: 6 Uhr-Seite, Raum 104 bis 105, Aufzug 1
+<br> Erreichbare Stockwerke Aufzug: Aufzug 1 - Stockwerke 0 bis 3
+<br> Anbindung an: Gang 7 senkrecht
+<br> Abbiegung in: Gang 2 diagonal, Gang 6 diagonal `;
 
-var building2Floor1Hallway2 = ``;
-var building2Floor1Hallway3 = ``;
-var building2Floor1Hallway4 = ``;
-var building2Floor1Hallway5 = ``;
-var building2Floor1Hallway6 = ``;
-var building2Floor1Hallway7 = ``;
+var building2Floor1Hallway2 = `Auslegung des Gangs: diagonal, 5 Uhr-11 Uhr-Gang
+<br> Länge des Gangs: 4 Meter
+<br> Erreichbare Räume: 8 Uhr-Seite, Raum 105
+<br> Abbiegung in: Gang 1 waagrecht, Gang 3 diagonal`;
 
-var building2Floor2 = `Grundform des Stockwerks: Quadratisch
+var building2Floor1Hallway3 = `Auslegung des Gangs: diagonal, 2 Uhr-8 Uhr-Gang
+<br> Länge des Gangs: 3 Meter
+<br> Abbiegung in: Gang 2 diagonal, Gang 4 waagrecht`;
+
+var building2Floor1Hallway4 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
+<br> Länge des Gangs: 10 Meter
+<br> Erreichbare Räume: 12 Uhr-Seite, Raum 101 bis 103
+<br> Anbindung an: Gang 7 senkrecht
+<br> Abbiegung in: Gang 3 diagonal, Gang 5 diagonal `;
+
+var building2Floor1Hallway5 = `Auslegung des Gangs: diagonal, 5 Uhr-11 Uhr-Gang
+<br> Länge des Gangs: 4 Meter
+<br> Erreichbare Räume: 2 Uhr-Seite, Raum 103
+<br> Abbiegung in: Gang 4 waagrecht, Gang 6 diagonal`;
+
+var building2Floor1Hallway6 = `Auslegung des Gangs: diagonal, 2 Uhr-8 Uhr-Gang
+<br> Länge des Gangs: 3 Meter
+<br> Erreichbare Räume: 5 Uhr-Seite, Raum 104
+<br> Abbiegung in: Gang 1 waagrecht, Gang 5 diagonal`;
+
+var building2Floor1Hallway7 = `Auslegung des Gangs: senkrecht, 12 Uhr-6 Uhr-Gang
+<br> Länge des Gangs: 5 Meter
+<br> Erreichbare Räume: 6 Uhr-Seite, 1 Herrentoilette, 12 Uhr-Seite, 1 Damentoilette
+<br> Anbindung an: Gang 1 waagrecht beide Richtungen, Gang 4 waagrecht beide Richtungen`;
+
+var building2Floor2 = `Grundform des Stockwerks: Quadratisch, 2 Raum-Blöcke im Inneren, von Gängen umgeben, Gangstruktur: Leiter-förmig, H-förmig, abweichend
+<br> Position der Räume: Räume an allen Wänden des Gebäudes, 2 innere Blöcke, 3 Räume pro Block
+<br> Barrierefreiheit: 1 barrierefreier Aufzug, 2 barrierefreie Toiletten
 <br> Toiletten: 1 Herrentoilette barrierefrei, 1 Damentoilette barrierefrei
 <br> Anzahl Gänge: 6, 
-<br> 3 9 Uhr–3 Uhr–Verbindungen: Gang 1, Gang 5, Gang 3 
-<br> 2 12 Uhr–6 Uhr–Verbindungen: Gang 2, Gang 4 
-<br> 1 8 Uhr–2 Uhr-Verbindung: Gang 6
-<br> Räume an allen Wänden des Gebäudes, 2 Raum-Blöcke im Inneren, von Gängen umgeben
+<br> 12 Uhr–6 Uhr–Verbindungen: senkrecht, Gang 2, Gang 4 
+<br> 2 Uhr–8 Uhr-Verbindung: diagonal, Gang 6
+<br> 3 Uhr–9 Uhr–Verbindungen: waagrecht, Gang 1, Gang 5, Gang 3 
 <br> Definition Bezugspunkt: Von Aufzug, aus Aufzug raus ist 12 Uhr
-<br> Lage Aufzug/Bezugspunkt: Innerer Block, ca. Gebäudemitte, mittig im Block`;
+<br> Lage des Bezugspunkts: Innerer Block, Gebäudemitte, mittig im Block`;
 
-var building2Floor2Hallway1 = `Auslegung des Ganges: 9 Uhr – 3 Uhr –Verbindung, Von 9 Uhr-Wand bis 3-Uhr-Wand
-<br> Länge: ca. 15 Meter
-<br> Erreichbare Räume: 12 Uhr - Seite R201-R205
-<br> Erreichbare Räume: 6 Uhr-Seite R214 und Aufzug 1
-<br> Erreichbare Stockwerke Aufzug: -2 bis 4
-<br> Gekreuzt von: Gang 2
-<br> Anbindung an: Gang 4 und Gang 6`;
+var building2Floor2Hallway1 = `Auslegung des Gangs: waagrecht, 3 Uhr–9 Uhr–Gang, Wand zu Wand
+<br> Länge: 15 Meter
+<br> Barrierefreiheit: 1 barrierefreier Aufzug im Gang
+<br> Erreichbare Räume: 12 Uhr-Seite, Raum 201 bis R205, 6 Uhr-Seite, Raum 214, Aufzug 1
+<br> Erreichbare Stockwerke Aufzug: Aufzug 1 - Stockwerke 0 bis 5
+<br> Gekreuzt von: Gang 2 senkrecht
+<br> Anbindung an: Gang 4 senkrecht, Gang 6 diagonal`;
 
-var building2Floor2Hallway2 = ``;
-var building2Floor2Hallway3 = ``;
-var building2Floor2Hallway4 = ``;
-var building2Floor2Hallway5 = ``;
-var building2Floor2Hallway6 = ``;
+var building2Floor2Hallway2 = `Auslegung des Gangs: senkrecht, 12 Uhr-6 Uhr-Gang
+<br> Länge des Gangs: 15 Meter
+<br> Erreichbare Räume: 3 Uhr-Seite, Raum 208, 1 Herrentoilette, barrierefrei, 1 Damentoilette, barrierefrei 9 Uhr-Seite, Raum 214
+<br> Anbindung an: Gang 5 waagrecht
+<br> Gekreuzt von: Gang 1 waagrecht
+<br> Abbiegung in: Gang 3 waagrecht`;
+
+var building2Floor2Hallway3 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
+<br> Länge des Gangs: 10 Meter
+<br> Erreichbare Räume: 12 Uhr-Seite, Raum 216 bis 218, 6 Uhr-Seite, Raum 209, Raum 210
+<br> Abbiegung in: Gang 2 senkrecht, Gang 4 senkrecht`;
+
+var building2Floor2Hallway4 = `Auslegung des Gangs: senkrecht, 12 Uhr-6 Uhr-Gang
+<br> Länge des Gangs: 10 Meter
+<br> Erreichbare Räume: 3 Uhr-Seite, Raum 215, 9 Uhr-Seite, Raum 211 bis 213
+<br> Anbindung an: Gang 1 waagrecht, beide Richtungen, Gang 5 waagrecht, Gang 6 diagonal 
+<br> Abbiegung in: Gang 3 waagrecht`;
+
+var building2Floor2Hallway5 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
+<br> Länge des Gangs: 10 Meter
+<br> Erreichbare Räume: 12 Uhr-Seite, Raum 215
+<br> Anbindung an: Gang 2 senkrecht, beide Richtungen, Gang 4 senkrecht, beide Richtungen`;
+
+var building2Floor2Hallway6 = `Auslegung des Gangs: diagonal, 2 Uhr-8 Uhr-Gang
+<br> Länge des Gangs: 2 Meter
+<br> Anbindung an: Gang 1 waagrecht, Gang 4 senkrecht`;
 
 
 
@@ -154,7 +217,7 @@ function floorSwitch(selectID1, selectID2, select3) {
     if (building.value == '1') {
 
         if (floor.value == "building1Floor1") {
-            var optionArray = ["building1Floor1Hallway1|Gang 1", "building1Floor1Hallway2|Gang 2", "building1Floor1Foyer1|Flur 1"];
+            var optionArray = ["building1Floor1Hallway1|Gang 1", "building1Floor1Hallway2|Gang 2", "building1Floor1Foyer1|Foyer 1"];
         } else if (floor.value == "building1Floor2") {
             var optionArray = ["building1Floor2Hallway1|Gang 1", "building1Floor2Hallway2|Gang 2", "building1Floor2Hallway3|Gang 3"];
         } else if (floor.value == "default") {
