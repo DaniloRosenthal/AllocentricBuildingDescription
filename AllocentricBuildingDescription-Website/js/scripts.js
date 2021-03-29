@@ -259,7 +259,7 @@ function descriptionStart(textID, picker1, picker2, picker3) {
 
     if (buildingPicker.value == '1') {
         if (floorPicker.value == 'defaultFloor') {
-            textField.innerHTML = building1;
+            textField.innerHTML = "Gebäude 1: <br>" + building1;
         } else if (hallwayPicker.value == 'defaultHallway') {
             choosingFloorFromBuilding(textField, floorPicker.value);
         } else {
@@ -267,7 +267,7 @@ function descriptionStart(textID, picker1, picker2, picker3) {
         }
     } else if (buildingPicker.value == '2') {
         if (floorPicker.value == 'defaultFloor') {
-            textField.innerHTML = building2;
+            textField.innerHTML = "Gebäude 2: <br>" + building2;
         } else if (hallwayPicker.value == 'defaultHallway') {
             choosingFloorFromBuilding(textField, floorPicker.value);
         } else {
@@ -281,16 +281,16 @@ function descriptionStart(textID, picker1, picker2, picker3) {
 function choosingFloorFromBuilding(textID, floorID) {
     switch (floorID) {
         case 'building1Floor1':
-            textID.innerHTML = building1Floor1;
+            textID.innerHTML = "Gebäude 1 Stockwerk 1: <br>" + building1Floor1;
             break;
         case 'building1Floor2':
-            textID.innerHTML = building1Floor2;
+            textID.innerHTML = "Gebäude 1 Stockwerk 2: <br>" + building1Floor2;
             break;
         case 'building2Floor1':
-            textID.innerHTML = building2Floor1;
+            textID.innerHTML = "Gebäude 2 Stockwerk 1: <br>" + building2Floor1;
             break;
         case 'building2Floor2':
-            textID.innerHTML = building2Floor2;
+            textID.innerHTML = "Gebäude 2 Stockwerk 2: <br>" + building2Floor2;
             break;
         default:
             textID.innerHTML = 'Hier steht die Beschreibung eines Gebäudes, eines Flurs oder eines Gangs/Foyers.....';
@@ -301,61 +301,61 @@ function choosingFloorFromBuilding(textID, floorID) {
 function choosingHallwayFromFloor(textID, hallwayID) {
     switch (hallwayID) {
         case 'building1Floor1Foyer1':
-            textID.innerHTML = building1Floor1Foyer1;
+            textID.innerHTML = "Gebäude 1 Stockwerk 1 Foyer 1: <br>" + building1Floor1Foyer1;
             break;
         case 'building1Floor1Hallway1':
-            textID.innerHTML = building1Floor1Hallway1;
+            textID.innerHTML = "Gebäude 1 Stockwerk 1 Gang 1: <br>" + building1Floor1Hallway1;
             break;
         case 'building1Floor1Hallway2':
-            textID.innerHTML = building1Floor1Hallway2;
+            textID.innerHTML = "Gebäude 1 Stockwerk 1 Gang 2: <br>" + building1Floor1Hallway2;
             break;
         case 'building1Floor2Hallway1':
-            textID.innerHTML = building1Floor2Hallway1;
+            textID.innerHTML = "Gebäude 1 Stockwerk 2 Gang 1: <br>" + building1Floor2Hallway1;
             break;
         case 'building1Floor2Hallway2':
-            textID.innerHTML = building1Floor2Hallway2;
+            textID.innerHTML = "Gebäude 1 Stockwerk 2 Gang 2: <br>" + building1Floor2Hallway2;
             break;
         case 'building1Floor2Hallway3':
-            textID.innerHTML = building1Floor2Hallway3;
+            textID.innerHTML = "Gebäude 1 Stockwerk 2 Gang 3: <br>" + building1Floor2Hallway3;
             break;
         case 'building2Floor1Hallway1':
-            textID.innerHTML = building2Floor1Hallway1;
+            textID.innerHTML = "Gebäude 2 Stockwerk 1 Gang 1: <br>" + building2Floor1Hallway1;
             break;
         case 'building2Floor1Hallway2':
-            textID.innerHTML = building2Floor1Hallway2;
+            textID.innerHTML = "Gebäude 2 Stockwerk 1 Gang 2: <br>" + building2Floor1Hallway2;
             break;
         case 'building2Floor1Hallway3':
-            textID.innerHTML = building2Floor1Hallway3;
+            textID.innerHTML = "Gebäude 2 Stockwerk 1 Gang 3: <br>" + building2Floor1Hallway3;
             break;
         case 'building2Floor1Hallway4':
-            textID.innerHTML = building2Floor1Hallway4;
+            textID.innerHTML = "Gebäude 2 Stockwerk 1 Gang 4: <br>" + building2Floor1Hallway4;
             break;
         case 'building2Floor1Hallway5':
-            textID.innerHTML = building2Floor1Hallway5;
+            textID.innerHTML = "Gebäude 2 Stockwerk 1 Gang 5: <br>" + building2Floor1Hallway5;
             break;
         case 'building2Floor1Hallway6':
-            textID.innerHTML = building2Floor1Hallway6;
+            textID.innerHTML = "Gebäude 2 Stockwerk 1 Gang 6: <br>" + building2Floor1Hallway6;
             break;
         case 'building2Floor1Hallway7':
-            textID.innerHTML = building2Floor1Hallway7;
+            textID.innerHTML = "Gebäude 2 Stockwerk 1 Gang 7: <br>" + building2Floor1Hallway7;
             break;
         case 'building2Floor2Hallway1':
-            textID.innerHTML = building2Floor2Hallway1;
+            textID.innerHTML = "Gebäude 2 Stockwerk 2 Gang 1: <br>" + building2Floor2Hallway1;
             break;
         case 'building2Floor2Hallway2':
-            textID.innerHTML = building2Floor2Hallway2;
+            textID.innerHTML = "Gebäude 2 Stockwerk 2 Gang 2: <br>" + building2Floor2Hallway2;
             break;
         case 'building2Floor2Hallway3':
-            textID.innerHTML = building2Floor2Hallway3;
+            textID.innerHTML = "Gebäude 2 Stockwerk 2 Gang 3: <br>" + building2Floor2Hallway3;
             break;
         case 'building2Floor2Hallway4':
-            textID.innerHTML = building2Floor2Hallway4;
+            textID.innerHTML = "Gebäude 2 Stockwerk 2 Gang 4: <br>" + building2Floor2Hallway4;
             break;
         case 'building2Floor2Hallway5':
-            textID.innerHTML = building2Floor2Hallway5;
+            textID.innerHTML = "Gebäude 2 Stockwerk 2 Gang 5: <br>" + building2Floor2Hallway5;
             break;
         case 'building2Floor2Hallway6':
-            textID.innerHTML = building2Floor2Hallway6;
+            textID.innerHTML = "Gebäude 2 Stockwerk 2 Gang 6: <br>" + building2Floor2Hallway6;
             break;
         default:
             textID.innerHTML = 'Hier steht die Beschreibung eines Gebäudes, eines Flurs oder eines Gangs/Foyers.....';
