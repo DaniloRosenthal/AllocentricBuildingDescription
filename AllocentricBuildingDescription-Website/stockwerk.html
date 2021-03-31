@@ -47,12 +47,36 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Erklärung zur Stockwerkbeschreibung</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Erklärung zur Gebäudebeschreibung</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <p>Folgenden sollen auf die wichtigsten Punkte der Beschreibungen eingegangen werden:
+                                Alle drei Beschreibungsarten (Gebäude, Stockwerk, Gang bzw. Foyer) sind stichpunktartig und 
+                                möglichst kurz gehalten. Die Beschreibungen sind positionsunabhängig, es lassen sich also kein Angaben finden,
+                                die vom Standpunkt der Person abhängen. Die bereitgestellten Informationen sind abhängig vom ausgewählten Objekt
+                                (Gebäude/Stockwerk/Gang/Foyer). So findet man die Information "Anzahl der Stockwerke" unter der Gebäude- aber nicht
+                                unter der Gangbeschreibung. Die Reihenfolge der Stichpunkte ist immer gleich. Wenn eine Information mal ausgelassen 
+                                werden sollte, dann gibt es sie für das ausgewählte Objekt nicht. Zudem werden in den Beschreibungen Aufzüge und Treppen zu den "Räumen"
+                                gezählt. Gänge die einen Knick haben, ob 90 Grad oder nur 10 Grad, werden an dem Knick in zwei Gänge aufgeteil.</p>
+                                <h5>Stockwerkbeschreibung:</h5>
+                                <p>Da die Bezeichner in dieser Anwendung Uhrzeitangaben sind, findet man Aussagen wie 12 Uhr-6 Uhr-Gänge. Dies 
+                                bedeutet einfach, dass es sich um einen senkrechten Gang handelt. Eine Nord-Süd-Verbindung, wenn man so will. 
+                                Abhängig des Definierten Koordinatensystems. Für den Mittelpunkt des Koordinatensystems wurde der Punkt vor dem Aufzug
+                                gewählt. Wenn man sich also vorstellt, man käme aus diesem Aufzug raus und beträte das Stockwerk, dann und nur dann wäre die Blickrichtung
+                                geradeaus 12 Uhr (oder Norden), links wäre 9 Uhr (oder Westen) und rechts wäre 3 Uhr (oder Osten). In diesem Fall wäre ein 3 Uhr-9 Uhr-Gang 
+                                ein Gang, der von links nach rechts geht. Solch ein 3 Uhr-9 Uhr-Gang hätte nun zwei Seiten: die 12 Uhr-Seite (also die nördliche Seite) und 6 Uhr-Seite (die südliche
+                                Seite). An diesen Seiten hätte man die Möglichkeit, Anbindungen an Räume zu finden. 12 Uhr-6 Uhr-Gänge hätten demnach 3 Uhr- und 9 Uhr Seiten etc. Dies 
+                                erfordert etwas Übung. Bitte vergewissern Sie sich, dass Sie diesen Beschreibungsstil verinnerlicht haben. Ansonsten könnten Sie die Ausgaben recht komplex und 
+                                unübersichtlich finden.</p>
+                                <h5>Gangbeschreibung:</h5>
+                                <p>Übergänge in andere Gänge oder Foyers werden in drei Arten beschrieben: "Anbindung an", "Gekreuzt von" und "Abbiegen in".
+                                "Anbindung an" bedeutet: Man kann geradeaus gehen oder in eine Richtung abbiegen. Oder der Gang hat ein Ende und der zweite Gang von links nach rechts durchgeht.
+                                So hätte man bei den zwei Gängen, die ein "T" bilden, bei beiden Gängen jeweils eine "Anbindung an". "Gekreuzt von" bedeutet, dass sich zwei Gänge kreuzen. Es liegt
+                                demnach eine Situation vor, in der zwei Gänge ein "+" (Plus) bilden. Die Gänge gehen jeweils auf beiden Seiten weiter.
+                                "Abbiegen in" wäre, wenn es sonst keine Wahl gibt. Der Gang knickt in einen anderen Gang ab. In welchem Grad dieser Knick ist, wird durch die Auslgegung und die 
+                                Uhrzeiten definiert. Ein Beispiel wäre "Abbiegen in: Gang 2 diagonal" bei der Auswahl von Gang zwei erfährt man anschließend die Ausrichtung, zum Beispiel 2 Uhr-8 Uhr-Gang.</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
@@ -68,7 +92,7 @@
                 <div class="col-xs-4 col-sm-4">
                     <form>
                         <label for="exampleInputEmail1" class="form-label">Auswahl des Gebäudes</label>
-                        <select class="form-select" size="3" aria-label="Auswahl Gebäude" id="select21" onchange="buildingSwitch(this.id, 'select22', 'select23')">
+                        <select class="form-select" size="3" aria-label="Auswahl Gebäude" id="select21" onclick="buildingSwitch(this.id, 'select22', 'select23')">
                             <option selected value="0">Open this select menu</option>
                             <option value="1">Gebäude 1</option>
                             <option value="2">Gebäude 2</option>
@@ -78,7 +102,7 @@
                 <div class="col-xs-4 col-sm-4">
                     <form>
                         <label for="exampleInputEmail1" class="form-label">Auswahl des Stockwerks</label>
-                        <select class="form-select" size="3" aria-label="Auswahl Stockwerk" id="select22" onchange="floorSwitch('select21',this.id, 'select23')">
+                        <select class="form-select" size="3" aria-label="Auswahl Stockwerk" id="select22" onclick="floorSwitch('select21',this.id, 'select23')">
                             <option selected>Open this select menu</option>
                         </select>
                     </form>
@@ -107,7 +131,7 @@
                 <div class="col-xs-4 col-sm-4">
                 </div>
                 <div class="col-xs-4 col-sm-4" id="textField">
-                    <p class="text-md-start">Hier steht die Beschreibung eines Gebäudes, eines Flurs oder eines Gangs/Foyers.....
+                    <p class="text-md-start">Hier steht die Beschreibung eines Gebäudes, eines Stockwerks oder eines Gangs/Foyers.....
                     </p>
                 </div>
                 <div class="col-xs-4 col-sm-4">
