@@ -16,16 +16,16 @@ var building2 = `Grundform des Gebäudes: Rechteckig, liegend
 <br> Anzahl Toiletten: 5 Herren-Toiletten, 5 Damen-Toiletten
 <br> Barrierefreiheit: 1 taktiler Gebäudeplan in Etage 0, 4 barrierefreie Toiletten`;
 
-var building1Floor1 = `Grundform des Stockwerks: Rechteckig, 1 innerer Raum-Block, mittig, Gangstruktur U-förmig, links-liegend, an 3 Seiten um Raumblock
+var building1Floor1 = `Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr
+<br> Lage des Bezugspunkts: Stockwerk-6 Uhr-Seite, längere Seite von Stockwerk, Gang 1, Richtung 9 Uhr von Gang 1
+<br> Grundform des Stockwerks: Rechteckig, 1 innerer Raum-Block, mittig, Gangstruktur U-förmig, links-liegend, an 3 Seiten um Raumblock
 <br> Position der Räume: an allen äußeren Wänden, 8 Räume im inneren Raum-Block
 <br> Barrierefreiheit: 2 barrierefreie Toiletten im Gang
 <br> Aufzüge und Treppen: Aufzug 1, Treppe 1
 <br> Toiletten: 1 Herrentoilette barrierefrei, 1 Damentoilette barrierefrei
 <br> Anzahl Gänge: 3
 <br> 12 Uhr-6 Uhr-Gänge: senkrecht, Gang 2
-<br> 3 Uhr-9 Uhr-Gänge: waagrecht, Gang 1, Gang 3
-<br> Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr
-<br> Lage des Bezugspunkts: Stockwerk-6 Uhr-Seite, längere Seite von Stockwerk, Gang 1, Richtung 9 Uhr von Gang 1`;
+<br> 3 Uhr-9 Uhr-Gänge: waagrecht, Gang 1, Gang 3`;
 
 var building1Floor1Hallway1 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang, von Wand zu Wand
 <br> Länge des Gangs: 15 Meter
@@ -46,7 +46,9 @@ var building1Floor1Hallway3 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
 <br> Erreichbare Stockwerke Treppe: Treppe 1 - Stockwerke 0 bis 1
 <br> Abbiegen in: Gang 2 senkrecht`;
 
-var building1Floor2 = `Grundform des Stockwerks: Rechteckig liegend, 4 Raum-Blöcke jeweils in Ecken, getrennt durch Gänge, Gangstruktur: Plus-förmig, mittig, 
+var building1Floor2 = `Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr 
+<br> Lage des Bezugspunkts: längere Seite Stockwerk, Seiten-mittig, Gang 1, Richtung längere Seite von Gebäudemitte
+<br> Grundform des Stockwerks: Rechteckig liegend, 4 Raum-Blöcke jeweils in Ecken, getrennt durch Gänge, Gangstruktur: Plus-förmig, mittig, 
 <br> Position der Räume: an allen äußeren Ecken, 1 Raum pro innerer Block in 3 Ecken, 1 Ecke mit zwei Räumen
 <br> Barrierefreiheit: 1 taktiler Gebäudeplan in Foyer 
 <br> Aufzüge und Treppen: Aufzug 1
@@ -54,9 +56,7 @@ var building1Floor2 = `Grundform des Stockwerks: Rechteckig liegend, 4 Raum-Blö
 <br> 12 Uhr-6 Uhr-Gänge: senkrecht, Gang 1
 <br> 3 Uhr-9 Uhr-Gänge: waagrecht, Gang 2 
 <br> Anzahl Foyers: 1 
-<br> Position der Foyers: Foyer 1: Stockwerk-mittig, quadratisch 
-<br> Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr 
-<br> Lage des Bezugspunkts: längere Seite Stockwerk, Seiten-mittig, Gang 1, Richtung längere Seite von Gebäudemitte`;
+<br> Position der Foyers: Foyer 1: Stockwerk-mittig, quadratisch `;
 
 var building1Floor2Foyer1 = `Auslegung des Foyers: quadratisch, Stockwerk-mittig
 <br> Länge des Foyers: 5 mal 5 Meter 
@@ -76,7 +76,9 @@ var building1Floor2Hallway2 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang,
 <br> Anbindung an: Foyer 1
 <br> Gekreuzt von: Gang 1 senkrecht beide Richtungen`;
 
-var building2Floor1 = `Grundform des Stockwerks: Rechteckig, zwei innere Raum-Blöcke getrennt durch Gang, Gangstruktur: Rauten-förmig, liegend
+var building2Floor1 = `Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr
+<br> Lage des Bezugspunkts: 6 Uhr-Seite, längere Seite, Gang 1, mittig von Gang
+<br> Grundform des Stockwerks: Rechteckig, zwei innere Raum-Blöcke getrennt durch Gang, Gangstruktur: Rauten-förmig, lang gezogen, liegend
 <br> Position der Räume: an allen äußeren Wänden, 1 Raum pro innerer Block
 <br> Aufzüge und Treppen: Aufzug 1
 <br> Toiletten: 1 Herrentoilette, 1 Damentoilette
@@ -84,9 +86,7 @@ var building2Floor1 = `Grundform des Stockwerks: Rechteckig, zwei innere Raum-Bl
 <br> 12 Uhr-6 Uhr-Gänge: senkrecht, Gang 7
 <br> 1 Uhr-7 Uhr-Gänge: diagonal, Gang 3, Gang 6
 <br> 3 Uhr-9 Uhr-Gänge: waagrecht, Gang 1, Gang 4
-<br> 5 Uhr-11 Uhr-Gänge: diagonal, Gang 2, Gang 5
-<br> Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr
-<br> Lage des Bezugspunkts: 6 Uhr-Seite, längere Seite, Gang 1, mittig von Gang`;
+<br> 5 Uhr-11 Uhr-Gänge: diagonal, Gang 2, Gang 5`;
 
 var building2Floor1Hallway1 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
 <br> Länge des Gangs: 10 Meter
@@ -126,7 +126,9 @@ var building2Floor1Hallway7 = `Auslegung des Gangs: senkrecht, 12 Uhr-6 Uhr-Gang
 <br> Erreichbare Räume: 6 Uhr-Seite, 1 Herrentoilette, 12 Uhr-Seite, 1 Damentoilette
 <br> Anbindung an: Gang 1 waagrecht beide Richtungen, Gang 4 waagrecht beide Richtungen`;
 
-var building2Floor2 = `Grundform des Stockwerks: Quadratisch, 2 Raum-Blöcke im Inneren, von Gängen umgeben, Gangstruktur: Leiter-förmig, H-förmig, abweichend
+var building2Floor2 = `Definition Bezugspunkt: Von Aufzug 1, aus Aufzug raus ist 12 Uhr
+<br> Lage des Bezugspunkts: Innerer Block, Gebäudemitte, mittig im Block
+<br> Grundform des Stockwerks: Quadratisch, 2 Raum-Blöcke im Inneren, von Gängen umgeben, Gangstruktur: Leiter-förmig, H-förmig, abweichend
 <br> Position der Räume: Räume an allen Wänden des Gebäudes, 2 innere Blöcke, 3 Räume pro Block
 <br> Barrierefreiheit: 1 barrierefreier Aufzug, 2 barrierefreie Toiletten
 <br> Aufzüge und Treppen: Aufzug 1
@@ -134,9 +136,7 @@ var building2Floor2 = `Grundform des Stockwerks: Quadratisch, 2 Raum-Blöcke im 
 <br> Anzahl Gänge: 6, 
 <br> 12 Uhr–6 Uhr–Verbindungen: senkrecht, Gang 2, Gang 4 
 <br> 2 Uhr–8 Uhr-Verbindung: diagonal, Gang 6
-<br> 3 Uhr–9 Uhr–Verbindungen: waagrecht, Gang 1, Gang 5, Gang 3 
-<br> Definition Bezugspunkt: Von Aufzug, aus Aufzug raus ist 12 Uhr
-<br> Lage des Bezugspunkts: Innerer Block, Gebäudemitte, mittig im Block`;
+<br> 3 Uhr–9 Uhr–Verbindungen: waagrecht, Gang 1, Gang 5, Gang 3 `;
 
 var building2Floor2Hallway1 = `Auslegung des Gangs: waagrecht, 3 Uhr–9 Uhr–Gang, von Wand zu Wand
 <br> Länge: 15 Meter
@@ -195,14 +195,14 @@ function buildingSwitch(selectID1, selectID2, selectID3) {
 
 
     var defaultFloor = document.createElement("option");
-    defaultFloor.text = "Default";
+    defaultFloor.text = "Kein Stockwerk ausgewählt";
     defaultFloor.value = "defaultFloor";
     s2.add(defaultFloor);
     s2.selectedIndex = '0';
 
 
     var defaultHallway = document.createElement("option");
-    defaultHallway.text = "Default";
+    defaultHallway.text = "Kein Gang/Foyer ausgewählt";
     defaultHallway.value = "defaultHallway";
     s3.add(defaultHallway);
     s3.selectedIndex = '0';
@@ -244,7 +244,7 @@ function floorSwitch(selectID1, selectID2, select3) {
 
 
     var defaultHallway = document.createElement("option");
-    defaultHallway.text = "Default";
+    defaultHallway.text = "Kein Gang/Foyer ausgewählt";
     defaultHallway.value = "defaultHallway";
     hallway.add(defaultHallway);
     hallway.selectedIndex = '0';
