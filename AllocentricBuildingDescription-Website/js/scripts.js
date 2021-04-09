@@ -17,7 +17,7 @@ var building2 = `Grundform des Gebäudes: Rechteckig, liegend
 <br> Barrierefreiheit: 1 taktiler Gebäudeplan in Etage 0, 4 barrierefreie Toiletten`;
 
 var building1Floor1 = `Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr
-<br> Lage des Bezugspunkts: Stockwerk-6 Uhr-Seite, längere Seite von Stockwerk, Gang 1, Richtung 9 Uhr von Gang 1
+<br> Lage des Bezugspunkts: längere Seite von Stockwerk, Gang 1, 6 Uhr-Seite, 
 <br> Grundform des Stockwerks: Rechteckig, 1 innerer Raum-Block, mittig, Gangstruktur U-förmig, links-liegend, an 3 Seiten um Raumblock
 <br> Position der Räume: an allen äußeren Wänden, 8 Räume im inneren Raum-Block
 <br> Barrierefreiheit: 2 barrierefreie Toiletten im Gang
@@ -47,7 +47,7 @@ var building1Floor1Hallway3 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang
 <br> Abbiegen in: Gang 2 senkrecht`;
 
 var building1Floor2 = `Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr 
-<br> Lage des Bezugspunkts: längere Seite Stockwerk, Seiten-mittig, Gang 1, Richtung längere Seite von Gebäudemitte
+<br> Lage des Bezugspunkts: längere Seite von Stockwerk, Gang 1, mittig, 3 Uhr-Seite
 <br> Grundform des Stockwerks: Rechteckig liegend, 4 Raum-Blöcke jeweils in Ecken, getrennt durch Gänge, Gangstruktur: Plus-förmig, mittig, 
 <br> Position der Räume: an allen äußeren Ecken, 1 Raum pro innerer Block in 3 Ecken, 1 Ecke mit zwei Räumen
 <br> Barrierefreiheit: 1 taktiler Gebäudeplan in Foyer 
@@ -77,7 +77,7 @@ var building1Floor2Hallway2 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang,
 <br> Gekreuzt von: Gang 1 senkrecht beide Richtungen`;
 
 var building2Floor1 = `Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr
-<br> Lage des Bezugspunkts: 6 Uhr-Seite, längere Seite, Gang 1, mittig von Gang
+<br> Lage des Bezugspunkts: längere Seite, Gang 1, mittig von Gang, 6 Uhr-Seite
 <br> Grundform des Stockwerks: Rechteckig, zwei innere Raum-Blöcke getrennt durch Gang, Gangstruktur: Sechseck, Rauten-förmig, lang gezogen, liegend
 <br> Position der Räume: an allen äußeren Wänden, 1 Raum pro innerer Block
 <br> Aufzüge und Treppen: Aufzug 1
@@ -127,7 +127,7 @@ var building2Floor1Hallway7 = `Auslegung des Gangs: senkrecht, 12 Uhr-6 Uhr-Gang
 <br> Anbindung an: Gang 1 waagrecht beide Richtungen, Gang 4 waagrecht beide Richtungen`;
 
 var building2Floor2 = `Definition Bezugspunkt: Von Aufzug 1, aus Aufzug raus ist 12 Uhr
-<br> Lage des Bezugspunkts: Innerer Block, Gebäudemitte, mittig im Block
+<br> Lage des Bezugspunkts: Innerer Block, Gebäudemitte, mittig im Block, Gang 1, 6 Uhr-Seite
 <br> Grundform des Stockwerks: Quadratisch, 2 Raum-Blöcke im Inneren, von Gängen umgeben, Gangstruktur: Leiter-förmig, H-förmig, abweichend
 <br> Position der Räume: Räume an allen Wänden des Gebäudes, 2 innere Blöcke, 3 Räume pro Block
 <br> Barrierefreiheit: 1 barrierefreier Aufzug, 2 barrierefreie Toiletten
