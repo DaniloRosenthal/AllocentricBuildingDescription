@@ -78,7 +78,7 @@ var building1Floor2Hallway2 = `Auslegung des Gangs: waagrecht, 3 Uhr-9 Uhr-Gang,
 
 var building2Floor1 = `Definition des Bezugspunkts: von Aufzug aus, geradeaus ist 12 Uhr
 <br> Lage des Bezugspunkts: 6 Uhr-Seite, längere Seite, Gang 1, mittig von Gang
-<br> Grundform des Stockwerks: Rechteckig, zwei innere Raum-Blöcke getrennt durch Gang, Gangstruktur: Rauten-förmig, lang gezogen, liegend
+<br> Grundform des Stockwerks: Rechteckig, zwei innere Raum-Blöcke getrennt durch Gang, Gangstruktur: Sechseck, Rauten-förmig, lang gezogen, liegend
 <br> Position der Räume: an allen äußeren Wänden, 1 Raum pro innerer Block
 <br> Aufzüge und Treppen: Aufzug 1
 <br> Toiletten: 1 Herrentoilette, 1 Damentoilette
@@ -281,7 +281,7 @@ function descriptionStart(textID, picker1, picker2, picker3) {
             choosingHallwayFromFloor(textField, hallwayPicker.value);
         }
     } else {
-        textField.innerHTML = 'Hier steht die Beschreibung eines Gebäudes, eines Flurs oder eines Gangs/Foyers.....';
+        textField.innerHTML = 'Hier steht die Beschreibung eines Gebäudes, eines Stockwerks oder eines Gangs/Foyers.....';
     }
 }
 
