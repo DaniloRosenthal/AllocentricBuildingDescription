@@ -11,7 +11,7 @@ var building2 = `Grundform des Gebäudes: Rechteckig, liegend
 <br> Haupteingang: Drehtür, Glas
 <br> Position Haupteingang: Am Fasanengarten 10, längere Seite, mittig
 <br> Warnung: Parkplatz vor Haupteingang, Baustelle neben Haupteingang
-<br> Anzahl Stockwerke: 5, 
+<br> Anzahl Stockwerke: 6, 
 <br> Etagen: 0 bis 5
 <br> Anzahl Toiletten: 5 Herren-Toiletten, 5 Damen-Toiletten
 <br> Barrierefreiheit: 1 taktiler Gebäudeplan in Etage 0, 4 barrierefreie Toiletten`;
